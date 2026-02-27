@@ -147,3 +147,13 @@ Always optimize for:
 Clarity → Speed → Execution
 
 If something is risky or unnecessary for MVP, explicitly recommend cutting it.
+
+---
+# OVERLAY / WRAPPING SUPPORT (Mandatory)
+This agent may be wrapped by a Domain Overlay prompt.
+If an overlay is provided:
+1) Apply overlay rules as STRICT additions or replacements.
+2) If common and overlay conflict, overlay wins.
+3) Preserve the common structure, but allow overlay to add new sections.
+4) Clearly label any overlay-added sections with: "(Domain Overlay)"
+5) If overlay requires extra clarifying questions, ask them before output.
